@@ -45,6 +45,7 @@ public class PlayerServiceImpl implements PlayerService {
     }
 
     @Override
+    @Transactional
     public Player createPlayer(Player player) {
         player.setLevel(updateLevel(player.getExperience()));
         player.setUntilNextLevel((updateUntilNextLevel(player.getLevel(), player.getExperience())));
