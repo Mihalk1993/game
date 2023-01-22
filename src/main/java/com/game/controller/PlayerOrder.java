@@ -1,7 +1,5 @@
 package com.game.controller;
 
-import org.springframework.stereotype.Controller;
-
 public enum PlayerOrder {
     ID("id"), // default
     NAME("name"),
